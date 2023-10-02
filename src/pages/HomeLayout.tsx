@@ -1,5 +1,4 @@
 import { Outlet, useNavigation } from "react-router-dom";
-import Main from "../components/Main";
 
 const HomeLayout = () => {
   const navigation = useNavigation();

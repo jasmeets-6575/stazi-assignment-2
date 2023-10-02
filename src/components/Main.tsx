@@ -8,6 +8,7 @@ const allCities = ["All", ...new Set(hotelData.map((data) => data.city))];
 const Main = () => {
   const [hotelItems, setHotelItems] = useState<DataType[]>(hotelData);
   const [city, setCity] = useState<string[]>(allCities);
+  console.log(setCity);
 
   const filterHotels = (category: string) => {
     const tempData = [...hotelData];

@@ -1,4 +1,4 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { hotelData } from "../utils/hotels";
 import { MdLocationPin } from "react-icons/md";
 import { BsBuildings, BsArrowsMove } from "react-icons/bs";
