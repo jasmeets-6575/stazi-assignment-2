@@ -1,4 +1,4 @@
-import { useNavigation } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Main from "../components/Main";
 
 const HomeLayout = () => {
@@ -8,7 +8,7 @@ const HomeLayout = () => {
   return (
     <div className="bg-gray-200">
       <section className="mx-auto my-0 py-5 px-2 w-[80vw] ">
-        {isPageLoading ? <div className="loading" /> : <Main />}
+        {isPageLoading ? <div className="loading" /> : <Outlet />}
       </section>
     </div>
   );
