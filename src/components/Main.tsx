@@ -10,9 +10,12 @@ const Main = () => {
   const [city, setCity] = useState<string[]>(allCities);
 
   const filterHotels = (category: string) => {
-    if (category === "all") {
-      setHotelItems(hotelData);
+    const tempData = [...hotelData];
+    if (category == "All") {
+      setHotelItems(tempData);
+      return;
     }
+
     const newHotelItems = hotelData.filter((item) => item.city === category);
     setHotelItems(newHotelItems);
   };
