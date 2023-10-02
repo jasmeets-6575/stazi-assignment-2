@@ -1,4 +1,4 @@
-import { DataType, hotelData } from "../utils/hotels";
+import { DataType } from "../utils/hotels";
 import HotelComponentItems from "./HotelComponentItems";
 
 interface Props {
